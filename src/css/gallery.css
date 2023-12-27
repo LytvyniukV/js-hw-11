@@ -1,0 +1,23 @@
+.gallery{
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    list-style-type: none;
+}
+.gallery img{
+    height: 440px;
+}
+.gallery-item{
+    width: calc((100% - 40px) / 3);
+    padding-bottom: 5px;
+    
+}
+.info-wrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+}

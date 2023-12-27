@@ -1,17 +1,6 @@
-import iziToast from 'izitoast';
-import 'izitoast/dist/css/iziToast.min.css';
+import { renderImages } from './js/render-images';
+import { refs } from './js/refs';
 
-export const showMessageReject = (delay) => {
-    iziToast.show({
-      message: `❌ Rejected promise in ${delay}ms`,
-      backgroundColor: 'rgb(240, 115, 115)',
-      messageColor: 'white',
-      maxWidth: 300,
-      position: 'topCenter',
-      timeout: 3000,
-      progressBar: false,
-      transitionIn: 'bounceInRight',
-      transitionOut: 'fadeOutLeft',
-      messageSize: 14,
-    });
-  };
+
+
+refs.searchForm.addEventListener('submit', renderImages);
