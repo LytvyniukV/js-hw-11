@@ -1,9 +1,13 @@
+.search-form{
+    text-align: center;
+}
 .gallery{
     margin-top: 20px;
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
     list-style-type: none;
+    justify-content: center;
 }
 .gallery img{
     height: 440px;

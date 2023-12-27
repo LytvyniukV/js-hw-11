@@ -2,7 +2,7 @@ import iziToast from 'izitoast';
 import 'izitoast/dist/css/iziToast.min.css';
 
 export const showMessage = () => {
-    iziToast.error();({
+    iziToast.error({
       message: `Sorry, there are no images matching your search query. Please try again!`,
       backgroundColor: 'rgb(240, 115, 115)',
       messageColor: 'white',
