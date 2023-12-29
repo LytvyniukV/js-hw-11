@@ -9,20 +9,20 @@ export const markup = ({ hits }) => {
         </a>
         <div class='info-wrap'>
           <div>
-            <h3>Likes</h3>
-            <p>${image.likes}</p>
+            <h3 class='card-title'>Likes</h3>
+            <p class='info-amount'>${image.likes}</p>
           </div>
           <div>
-            <h3>Views</h3>
-            <p>${image.views}</p>
+            <h3 class='card-title'>Views</h3>
+            <p class='info-amount'>${image.views}</p>
           </div>
           <div>
-            <h3>Comments</h3>
-            <p>${image.comments}</p>
+            <h3 class='card-title'>Comments</h3>
+            <p class='info-amount'>${image.comments}</p>
           </div>
           <div>
-            <h3>Downloads</h3>
-            <p>${image.downloads}</p>
+            <h3 class='card-title'>Downloads</h3>
+            <p class='info-amount'>${image.downloads}</p>
           </div>
         </div>
       </li>`,

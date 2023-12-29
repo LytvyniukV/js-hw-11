@@ -7,7 +7,7 @@ import { modalGallery } from './gallery-init';
 export const renderImages = event => {
   event.preventDefault();
 
-  refs.gallery.innerHTML = "<div class='loader'></div>";
+  refs.gallery.innerHTML = "<div class='loader'>Please wait...</div>";
   getImages()
     .then(images => {
       if (images.hits.length < 1) {
@@ -17,7 +17,7 @@ export const renderImages = event => {
       }
       refs.gallery.innerHTML = markup(images);
       modalGallery.refresh();
-      console.log(images);
+      refs.searchForm.reset()
     })
     .catch(error => console.log(error));
 };
